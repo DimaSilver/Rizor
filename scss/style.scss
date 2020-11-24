@@ -3,7 +3,51 @@
 @import "fonts";
 @import "global";
 
-
-
-
+.header{
+  padding: 30px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu{
+  &__list-item{
+    display: inline-block;
+    text-transform: uppercase;
+    @extend %roboto-bold;
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: .8px;
+    color: #000;
+    & + & {
+      margin-left: 70px;
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 1px;
+      background-color: #3a30f8;
+      left: -9px;
+      bottom: -3px;
+      opacity: 0;
+    }
+    &:hover::before{
+      animation: runRight 1s;
+      animation-fill-mode: forwards;
+      transition: opacity ease-in-out .3s;
+      opacity: 1;
+    }
+  }
+}
+@keyframes runRight {
+  0%{
+    width: 20px;
+  }
+  100%{
+    width: calc(100% + 18px);
+  }
+}
 @import "media";
