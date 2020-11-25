@@ -13,6 +13,7 @@
 <body>
 <header class="header">
     <div class="container">
+        <div class="header__top">
         <div class="header__inner">
             <div class="header__logo">
                 <a class="logo" href="#"><img src="images/logo.svg" alt=""></a>
@@ -25,11 +26,24 @@
                 </ul>
             </nav>
         </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__bottom-textarea">
+                <h1 class="header__bottom-textarea__title">
+                    RIzor
+                    Hovertrax
+                    4.0
+                </h1>
+                <p class="header__bottom-textarea__descr">
+                    Маневренность, легкость,
+                    экологичность
+                </p>
+            </div>
+            <img class="header__bottom-arrowdown" src="images/arrow-down.svg" alt="">
+        </div>
     </div>
-</header>
-<section class="first-screen">
-    <a class="first-screen__video" href="#">
-        <img class="first-screen__video-img" src="images/first-screen__video-img.jpg" alt="">
+    <a class="header__video" href="#">
+        <img class="header__video-img" src="images/first-screen__video-img.jpg" alt="">
         <div class="video__play">
             <p class="video-play__text">
                 Смотреть
@@ -38,29 +52,15 @@
             <img class="video-play__object" src="images/video-play__object.svg" alt="">
         </div>
     </a>
-    <div class="container">
-        <div class="first-screen__textarea">
-            <h1 class="first-screen__textarea-title">
-                RIzor
-                Hovertrax
-                4.0
-            </h1>
-            <p class="first-screen__textarea-descr">
-                Маневренность, легкость,
-                экологичность
-            </p>
-        </div>
-        <img class="first-screen__arrowdown" src="images/arrow-down.svg" alt="">
-    </div>
     <div class="pagination">
         <ul class="pagination__list">
-            <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
+            <li class="pagination__list-item pagination__list-item__active"><a class="pagination__list-link"></a></li>
             <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
             <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
             <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
         </ul>
     </div>
-</section>
+</header>
 <section class="benefits">
     <a class="design__video benefits__video" href="#">
         <img class="design__video-img benefits__video-img" src="images/design__video-img.jpg" alt="">

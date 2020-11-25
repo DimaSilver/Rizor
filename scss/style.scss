@@ -4,11 +4,62 @@
 @import "global";
 
 .header{
-  padding: 30px 0;
+  background-image: url('../images/first-screen__bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left top 70px;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 259px;
+  &__top{
+    padding: 29px 0;
+  }
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &__video{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    .video__play{
+      top: 72px;
+    }
+  }
+  &__bottom-textarea{
+    margin-top: 200px;
+    position: relative;
+    z-index: 5;
+    max-width: 660px;
+    &::after{
+      position: absolute;
+      content: "";
+      background-image: url('../images/line__first-screen.png');
+      width: 18px;
+      height: 72px;
+      right: 262px;
+      top: -48px;
+    }
+  }
+  &__bottom-textarea__title{
+    margin: 0;
+    @extend %rubik-mono;
+    font-size: 80px;
+    line-height: 90px;
+  }
+  &__bottom-textarea__descr{
+    @extend %roboto-bold;
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 325px;
+  }
+  &__bottom-arrowdown{
+    margin: 30px 0 0 30px;
+  }
+  & .pagination{
+    top: 50%;
+    transform: translateY(-110px);
   }
 }
 .menu{
@@ -42,6 +93,10 @@
     }
   }
 }
+
+
+
+
 @keyframes runRight {
   0%{
     width: 20px;
