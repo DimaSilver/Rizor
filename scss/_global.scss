@@ -23,6 +23,12 @@ a{
   display: inline-block;
   color: inherit;
 }
+body{
+  @extend %roboto-light;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
 .container{
   max-width: 1200px;
   padding: 0 15px;
@@ -86,4 +92,17 @@ a{
     background-color: transparent;
     border: 2px solid #4940f9;
   }
+}
+.descr{
+  font-size: 20px;
+  line-height: 25px;
+  color: #3a30f8;
+  @extend %roboto-bold;
+  text-transform: uppercase;
+}
+.title{
+  @extend %rubik-mono;
+  font-size: 40px;
+  letter-spacing: .8px;
+  line-height: 44px;
 }

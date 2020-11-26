@@ -7,25 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik+Mono+One&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="header__top">
-        <div class="header__inner">
-            <div class="header__logo">
-                <a class="logo" href="#"><img src="images/logo.svg" alt=""></a>
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="logo" href="#"><img src="images/logo.svg" alt=""></a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Преимущества</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">характеристики</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">для кого</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">Преимущества</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">характеристики</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">для кого</a></li>
-                </ul>
-            </nav>
-        </div>
         </div>
         <div class="header__bottom">
             <div class="header__bottom-textarea">
@@ -54,19 +55,20 @@
     </a>
     <div class="pagination">
         <ul class="pagination__list">
-            <li class="pagination__list-item pagination__list-item__active"><a class="pagination__list-link"></a></li>
-            <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
-            <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
-            <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
+            <li class="pagination__list-item pagination__list-item__active"><a class="pagination__list-link"
+                                                                               href="#"></a></li>
+            <li class="pagination__list-item"><a class="pagination__list-link" href="#"></a></li>
+            <li class="pagination__list-item"><a class="pagination__list-link" href="#"></a></li>
+            <li class="pagination__list-item"><a class="pagination__list-link" href="#"></a></li>
         </ul>
     </div>
 </header>
-<section class="benefits">
+<section class="benefits design">
     <a class="design__video benefits__video" href="#">
         <img class="design__video-img benefits__video-img" src="images/design__video-img.jpg" alt="">
     </a>
     <div class="container">
-        <div class="benefits__textarea design">
+        <div class="benefits__textarea design__textarea">
             <p class="benefits__textarea-descr descr">преимущества</p>
             <h3 class="title">дизайн</h3>
             <p class="design__text benefits__text">Внешний вид скутера дышит
@@ -74,12 +76,18 @@
             <ul class="benefits__textarea-list design__list">
                 <li class="benefits__textarea-list__item design__list-item">плавные линии</li>
                 <li class="benefits__textarea-list__item design__list-item">подсветка светодиодными
-                    индикаторами</li>
+                    индикаторами
+                </li>
                 <li class="benefits__textarea-list__item design__list-item">рельефные бамперы,
                     оснащенные защитными
-                    панелями</li>
+                    панелями
+                </li>
             </ul>
         </div>
+    </div>
+    <div class="benefits__background-text">
+         <span>4.0</span>
+       RIzor
     </div>
     <div class="pagination">
         <ul class="pagination__list">
@@ -196,23 +204,27 @@
                     <p class="electronic__textarea-paragraph benefits__text">При эксплуатации Rizor Hovertrax 4.0 нельзя
                         не отметить плавность торможения и быстроту
                         набора скорости.</p>
-                    <p class="electronic__textarea-paragraph benefits__text">В копилку «плюсов» нужно отнести и безупречную
+                    <p class="electronic__textarea-paragraph benefits__text">В копилку «плюсов» нужно отнести и
+                        безупречную
                         отзывчивость электронной начинки.</p>
                     <div class="electronic__textarea-items">
                         <div class="electronic__textarea-item">
-                            <img class="electronic__textarea-item__img" src="images/electronic__textarea-item__img-1.svg" alt="">
+                            <img class="electronic__textarea-item__img"
+                                 src="images/electronic__textarea-item__img-1.svg" alt="">
                             <p class="electronic__textarea-item__title">Бесшумный
                                 двигатель</p>
                         </div>
                         <div class="electronic__textarea-item">
-                            <img class="electronic__textarea-item__img" src="images/electronic__textarea-item__img-2.svg" alt="">
+                            <img class="electronic__textarea-item__img"
+                                 src="images/electronic__textarea-item__img-2.svg" alt="">
                             <p class="electronic__textarea-item__title">Встроенный
                                 гироскоп</p>
                         </div>
                     </div>
                 </div>
                 <a class="electronic__video benefits__video" href="#">
-                    <img class="electronic__video-img benefits__video-img" src="images/electronic__video-img.jpg" alt="">
+                    <img class="electronic__video-img benefits__video-img" src="images/electronic__video-img.jpg"
+                         alt="">
                 </a>
             </div>
         </div>
@@ -239,7 +251,8 @@
                 </div>
                 <div class="accumulator__textarea">
                     <h3 class="title">аккумулятор</h3>
-                    <p class="accumulator__textarea-paragraph benefits__text">Имеет съемную аккумуляторную батарею. Это позволяет
+                    <p class="accumulator__textarea-paragraph benefits__text">Имеет съемную аккумуляторную батарею. Это
+                        позволяет
                         легко вытащить сам АКБ и, к примеру, перевезти весь
                         гиробордв самолёте – это кстати единственный гироскутер,
                         с которым проходит такой «трюк», да и есть документы,
@@ -258,7 +271,8 @@
             <h3 class="title">Rizor Hovertrax 4.0</h3>
             <div class="characteristics__textarea-blocks">
                 <div class="characteristics__textarea-blocks__item">
-                    <img class="characteristics__textarea-blocks__item-img" src="images/characteristics__textarea-blocks__item-img-1.svg" alt="">
+                    <img class="characteristics__textarea-blocks__item-img"
+                         src="images/characteristics__textarea-blocks__item-img-1.svg" alt="">
                     <h6 class="characteristics__textarea-blocks__title">Корпус</h6>
                     <p class="characteristics__textarea-blocks__paragraph">выполнен из прочного пластика,
                         и имеет приятную LED подсветку,
@@ -267,7 +281,8 @@
                         антискользящим покрытием.</p>
                 </div>
                 <div class="characteristics__textarea-blocks__item">
-                    <img class="characteristics__textarea-blocks__item-img" src="images/characteristics__textarea-blocks__item-img-2.svg" alt="">
+                    <img class="characteristics__textarea-blocks__item-img"
+                         src="images/characteristics__textarea-blocks__item-img-2.svg" alt="">
                     <h6 class="characteristics__textarea-blocks__title">Колеса</h6>
                     <p class="characteristics__textarea-blocks__paragraph">Rizor Hovertrax 4.0 получил
                         относительно небольшие,
@@ -275,7 +290,8 @@
                         колёса в 6,5 дюймов.</p>
                 </div>
                 <div class="characteristics__textarea-blocks__item">
-                    <img class="characteristics__textarea-blocks__item-img" src="images/characteristics__textarea-blocks__item-img-3.svg" alt="">
+                    <img class="characteristics__textarea-blocks__item-img"
+                         src="images/characteristics__textarea-blocks__item-img-3.svg" alt="">
                     <h6 class="characteristics__textarea-blocks__title">Мощность</h6>
                     <p class="characteristics__textarea-blocks__paragraph">двигателя в 350 Вт обеспечивает
                         комфортное и безопасное
@@ -283,7 +299,8 @@
                         скорости в 13 км/ч.</p>
                 </div>
                 <div class="characteristics__textarea-blocks__item">
-                    <img class="characteristics__textarea-blocks__item-img" src="images/characteristics__textarea-blocks__item-img-4.svg" alt="">
+                    <img class="characteristics__textarea-blocks__item-img"
+                         src="images/characteristics__textarea-blocks__item-img-4.svg" alt="">
                     <h6 class="characteristics__textarea-blocks__title">Вес</h6>
                     <p class="characteristics__textarea-blocks__paragraph">небольшой вес, приблизительно
                         в 12 кг, позволяет относительно
