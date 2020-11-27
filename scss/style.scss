@@ -132,6 +132,10 @@
       margin-left: 300px;
     }
   }
+  .pagination{
+    right: 103px;
+    top: 335px;
+  }
 }
 /*end benefits*/
 
@@ -255,6 +259,28 @@
 
 .indicators{
   padding-top: 850px;
+  &__textarea{
+    max-width: 500px;
+    padding: 0 30px;
+    margin-bottom: 50px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url('../images/line__indicators.png');
+      width: 37px;
+      height: 362px;
+      top: 20px;
+      left: -50px;
+    }
+  }
+  &__video{
+    position: relative;
+    .video__play{
+      top: 70px;
+      left: -30px;
+    }
+  }
 }
 
 @keyframes runRight {

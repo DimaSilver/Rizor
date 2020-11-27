@@ -34,6 +34,11 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+.container-small{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .video__play{
   position: absolute;
   left: -40px;
@@ -48,6 +53,7 @@ body{
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .pagination{
   position: absolute;
@@ -72,7 +78,7 @@ body{
     transform: translateX(-100%);
   }
   &::after{
-    top: 130px;
+    top: 150px;
     transform: translateX(-50%);
   }
   &__list-item{

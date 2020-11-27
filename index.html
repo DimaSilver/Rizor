@@ -92,7 +92,7 @@
     <div class="pagination">
         <ul class="pagination__list">
             <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
-            <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
+            <li class="pagination__list-item pagination__list-item__active"><a class="pagination__list-link"></a></li>
             <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
             <li class="pagination__list-item"><a class="pagination__list-link"></a></li>
         </ul>
@@ -116,8 +116,9 @@
                 </div>
             </div>
             <div class="tabs-container color-choice__container">
-                <a id="tab1" class="tabs-content color-choice__content color-choice__model tabs-content--active" href="#">
-                        <img class="color-choice__model-img" src="images/color-choice__model-img1.png" alt="">
+                <a id="tab1" class="tabs-content color-choice__content color-choice__model tabs-content--active"
+                   href="#">
+                    <img class="color-choice__model-img" src="images/color-choice__model-img1.png" alt="">
                 </a>
                 <a id="tab2" class="tabs-content color-choice__content color-choice__model" href="#">
                     <img class="color-choice__model-img" src="images/color-choice__model-img2.png" alt="">
@@ -133,15 +134,21 @@
                 </a>
             </div>
         </div>
+    </div>
+    <div class="container-small">
         <div class="indicators">
-            <h3 class="title">индикаторы</h3>
-            <p class="indicators__text benefits__text">Cветодиодные индикаторы сообщают окружающим
-                о запланированном повороте. Своим мерцанием
-                они мгновенно реагируют на смещение центра
-                тяжести в правую или левую сторону.</p>
-            <p class="indicators__text benefits__text">Как только ваше движение продолжится по прямой,
-                мерцание прекратится, подсветка снова станет
-                в виде сплошной линии.</p>
+            <div class="indicators__textarea">
+                <h3 class="title">индикаторы</h3>
+                <div class="indicators__text">
+                <p class="indicators__paragraph benefits__text">Cветодиодные индикаторы сообщают окружающим
+                    о запланированном повороте. Своим мерцанием
+                    они мгновенно реагируют на смещение центра
+                    тяжести в правую или левую сторону.</p>
+                <p class="indicators__paragraph benefits__text">Как только ваше движение продолжится по прямой,
+                    мерцание прекратится, подсветка снова станет
+                    в виде сплошной линии.</p>
+                </div>
+            </div>
             <a class="indicators__video" href="#">
                 <img class="indicators__video-img" src="images/indicators__video-img.jpg" alt="">
                 <div class="video__play">
