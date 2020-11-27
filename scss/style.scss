@@ -120,7 +120,8 @@
   }
   &__background-text{
     position: absolute;
-    right: 0;
+    right: -30px;
+    top: 100px;
     transform: rotate(-90deg);
     @extend %rubik-mono;
     font-size: 173px;
@@ -168,11 +169,93 @@
     transform: translateX(calc(-50% + 25px));
     top: 90px;
   }
+  &__text{
+    margin-top: -10px;
+  }
   &__list{
     margin-top: 25px;
   }
 }
 /*end design*/
+
+/*start color-choice*/
+.color-choice {
+  float: right;
+  padding-top: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  &__textarea {
+    max-width: 270px;
+    float: right;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url('../images/line__color-choice.png');
+      width: 18px;
+      height: 290px;
+      left: -50px;
+      top: 60px;
+    }
+  }
+  &__list {
+    margin: 50px 0 30px;
+    max-width: 270px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  &__link {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    &.tab--active {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url('../images/line__color-choice__img.png');
+        width: 3px;
+        height: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 29px;
+      }
+    }
+    & + & {
+      margin-left: 33px;
+    }
+  }
+
+  &__link:first-child {
+    background-color: #e2e837;
+  }
+  &__link:nth-child(2) {
+    background-color: #00b6f1;
+  }
+  &__link:nth-child(3) {
+    background-color: #e23232;
+  }
+  &__link:nth-child(4) {
+    background-color: #f0efef;
+  }
+  &__link:nth-child(5) {
+    background-color: #0c0c0c;
+  }
+  &__model {
+    display: none;
+    &.tabs-content--active {
+      display: block;
+    }
+  }
+}
+/*end color-choice*/
+
+.indicators{
+  padding-top: 850px;
+}
 
 @keyframes runRight {
   0%{
