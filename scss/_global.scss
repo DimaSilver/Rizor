@@ -112,3 +112,23 @@ body{
   letter-spacing: .8px;
   line-height: 44px;
 }
+.options{
+  display: flex;
+  &__list-item__top{
+    @extend %rubik-mono;
+    color: #3a30f8;
+    font-size: 60px;
+    line-height: 62px;
+    letter-spacing: -.7px;
+    white-space: nowrap;
+  }
+  &__list-item__top-span{
+    font-size: 24px;
+    line-height: 26px;
+  }
+  &__list-item__name{
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+  }
+}

@@ -98,6 +98,10 @@
 
 /*start benefits*/
 .benefits{
+  background-image: url('../images/first-screen__bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left 36%;
   position: relative;
   &__textarea-descr{
     margin-bottom: 70px;
@@ -130,6 +134,11 @@
     span{
       display: block;
       margin-left: 300px;
+    }
+  }
+  &__text{
+    span{
+      @extend %roboto-bold;
     }
   }
   .pagination{
@@ -189,7 +198,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   &__textarea {
     max-width: 270px;
     float: right;
@@ -257,8 +266,9 @@
 }
 /*end color-choice*/
 
+/*start indicators*/
 .indicators{
-  padding-top: 850px;
+  padding: 850px 0 150px;
   &__textarea{
     max-width: 500px;
     padding: 0 30px;
@@ -282,6 +292,52 @@
     }
   }
 }
+/*end indicators*/
+
+/*start modes*/
+.modes{
+  padding-bottom: 400px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/line__mode.png');
+    width: 156px;
+    height: 474px;
+    left: 33%;
+    top: 107px;
+    transform: translateX(-5px);
+  }
+  &__video{
+    float: right;
+    position: relative;
+    .video__play{
+      bottom: 75px;
+      left: -30px;
+    }
+  }
+  &__textarea{
+    padding-top: 50px;
+    max-width: 370px;
+  }
+  &__list{
+    margin-top: 30px;
+  }
+  &__components{
+    margin-top: 30px;
+  }
+  &__components-item{
+    & + & {
+      margin-left: 70px;
+    }
+  }
+  &__components-item__name{
+    margin-top: -50px;
+  }
+}
+/*end modes*/
+
+
 
 @keyframes runRight {
   0%{
