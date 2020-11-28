@@ -111,6 +111,7 @@ body{
   font-size: 40px;
   letter-spacing: .8px;
   line-height: 44px;
+  margin: 0;
 }
 .options{
   display: flex;
@@ -130,5 +131,35 @@ body{
     font-size: 16px;
     line-height: 20px;
     color: #666666;
+  }
+}
+.blocks__inner{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 70px;
+}
+.benefits__video{
+  position: absolute;
+  &::before,
+  &::after{
+    position: absolute;
+    content: "";
+  }
+  &::before{
+    background-color: rgba(#fff, .8);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &::after{
+    background-image: url('../images/video-play__center-obj.svg');
+    width: 40px;
+    height: 44px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(calc(-50% + 5px)) translateY(-50%);
   }
 }
