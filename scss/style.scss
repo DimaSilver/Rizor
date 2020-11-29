@@ -125,16 +125,18 @@
   }
   &__background-text{
     position: absolute;
-    right: -30px;
+    right: -35px;
     top: 100px;
     transform: rotate(-90deg);
     @extend %rubik-mono;
     font-size: 173px;
     line-height: 180px;
     color: #f8f8f8;
+    letter-spacing: 8px;
     span{
       display: block;
-      margin-left: 300px;
+      margin-left: 375px;
+      letter-spacing: -25px;
     }
   }
   &__text{
@@ -373,6 +375,70 @@
 }
 /*end electronic*/
 
+/*start characteristics*/
+.characteristics{
+  position: relative;
+  padding-bottom: 200px;
+  &__bg{
+    position: absolute;
+  }
+  &__textarea-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 60px 0 500px;
+  }
+  &__textarea{
+    padding-top: 80px;
+  }
+  &__descr{
+    margin-bottom: 65px;
+  }
+  &__textarea-blocks__item{
+    max-width: 280px;
+    position: relative;
+    &:nth-child(2n){
+      max-width: 250px;
+    }
+    &:first-child .characteristics__textarea-blocks__item-img{
+      left: -60px;
+      top: 8px;
+    }
+    &:nth-child(2) .characteristics__textarea-blocks__item-img{
+      left: -50px;
+      top: 5px;
+    }
+    &:nth-child(3) .characteristics__textarea-blocks__item-img{
+      left: -50px;
+      top: 16px;
+    }
+    &:nth-child(4) .characteristics__textarea-blocks__item-img{
+      left: -44px;
+      top: 2px;
+    }
+    &:nth-child(3),
+    &:nth-child(4){
+      margin-top: 20px;
+    }
+  }
+  &__textarea-blocks__item-img{
+    position: absolute;
+    z-index: -1;
+  }
+  &__textarea-blocks__title{
+    text-transform: uppercase;
+  }
+  &__textarea-blocks__paragraph{
+    margin-top: -26px;
+    span{
+      @extend %roboto-bold;
+    }
+  }
+  &__background-text{
+    top: 50px;
+  }
+}
+/*end characteristics*/
 @keyframes runRight {
   0%{
     width: 20px;
