@@ -514,7 +514,19 @@
 }
 /*end catalog__entrance*/
 
-
+/*end footer*/
+.footer{
+  background-color: #282828;
+  padding: 6px 0;
+  text-align: center;
+  &__copy{
+    @extend %roboto-light;
+    font-size: 12px;
+    line-height: 15px;
+    color: #605f5f;
+  }
+}
+/*end footer*/
 
 @keyframes runRight {
   0%{
