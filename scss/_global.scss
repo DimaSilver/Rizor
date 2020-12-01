@@ -1,5 +1,6 @@
 html{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,*::before,*::after{
   box-sizing: inherit;
@@ -54,11 +55,17 @@ body{
   line-height: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  animation-name: LineAppear;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
 }
 .pagination{
-  position: absolute;
+  position: fixed;
   right: 95px;
-  transform: translateX(50%);
+  transform: translateX(50%) translateY(-80px);
+  top: 50%;
+  z-index: 5;
   &__list{
     display: flex;
     flex-direction: column;
@@ -92,7 +99,7 @@ body{
     border-radius: 50%;
     background-color: #3a30f8;
   }
-  & .pagination__list-item__active .pagination__list-link{
+  & .pagination__list-item .pagination__list-link__active {
     width: 16px;
     height: 16px;
     background-color: transparent;
@@ -144,6 +151,9 @@ body{
   &::after{
     position: absolute;
     content: "";
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   &::before{
     background-color: rgba(#fff, .8);

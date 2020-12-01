@@ -6,4 +6,8 @@ $(function (){
         $(this).addClass('tab--active');
         $($(this).attr('href')).addClass('tabs-content--active');
     });
+    $('.pagination__list-item').on("click", ".pagination__list-link", function() {
+        $(this).addClass('pagination__list-link__active').parent().siblings().children().removeClass('pagination__list-link__active');
+    });
+    new WOW().init();
 });
