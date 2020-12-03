@@ -13,6 +13,32 @@
   .design__textarea {
     transform: translateX(80px);
   }
+  .color-choice {
+    padding-top: 700px;
+    flex-direction: initial;
+    align-items: center;
+  }
+  .tabs-wrapper{
+    order: 1;
+  }
+  .color-choice__list{
+    flex-direction: column;
+    margin: 30px 0 40px;
+  }
+  .color-choice__link + .color-choice__link {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+  .color-choice__link.tab--active::before {
+    transform: translateX(-50%) rotate(90deg);
+    left: -32px;
+    top: -13px;
+  }
+  .color-choice__textarea::before {
+    transform: rotate(270deg);
+    left: 140px;
+    top: 5px;
+  }
 }
 @media(max-width: 1700px){
   .header__bottom-textarea {
@@ -35,6 +61,14 @@
     }
   }
 }
+@media(max-width: 1560px){
+  .benefits__background-text {
+    font-size: 135px;
+    right: -50px;
+    line-height: 145px;
+    top: 50px;
+  }
+}
 @media(max-width: 1520px){
   .header__bottom-textarea__descr {
     font-size: 18px;
@@ -46,12 +80,6 @@
   .header__video-img__wrapper{
     width: 100%;
     overflow-x: hidden;
-  }
-  .benefits__background-text {
-    font-size: 135px;
-    right: -50px;
-    line-height: 145px;
-    top: 50px;
   }
   .design__textarea {
     transform: translateX(130px);
@@ -107,6 +135,16 @@
   .pagination {
     transform: translateX(50%) translateY(-40px);
   }
+  .color-choice {
+    padding-top: 850px;
+    float: none;
+  }
+}
+@media(max-width: 1280px){
+  .benefits {
+    position: relative;
+    padding-bottom: 170px;
+  }
 }
 @media(max-width: 1250px){
   .header {
@@ -147,6 +185,13 @@
   .header {
     background-position: left -160px top 70px;
   }
+  .color-choice__textarea {
+    max-width: 200px;
+    margin-right: 35px;
+    &::before {
+      top: 20px;
+    }
+  }
 }
 @media(max-width: 1000px) {
   .design__text{
@@ -155,6 +200,10 @@
   .title {
     font-size: 30px;
     line-height: 34px;
+  }
+  .wow.color-choice__link{
+    animation-name: none !important;
+    visibility: visible !important;
   }
 }
 @media(max-width: 950px) {
@@ -237,17 +286,27 @@
     margin-bottom: 80px;
   }
 }
-@media(max-width: 850px){
+@media(max-width: 850px) {
   .design__textarea {
     max-width: 250px;
   }
   .design__textarea {
     transform: translateX(110px);
   }
+  .color-choice__list {
+    padding: 0 0 0 30px;
+  }
+  .color-choice__textarea::before{
+    display: none;
+  }
 }
 @media(max-width: 820px){
   .header__bottom-textarea::after {
     right: 430px;
+  }
+  .color-choice__textarea {
+    margin-right: 10px;
+    margin-left: 80px;
   }
 }
 @media(max-width: 780px){
