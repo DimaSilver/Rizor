@@ -39,6 +39,9 @@
     left: 140px;
     top: 5px;
   }
+  .indicators__textarea::before {
+    top: 165px;
+  }
 }
 @media(max-width: 1700px){
   .header__bottom-textarea {
@@ -139,6 +142,12 @@
     padding-top: 850px;
     float: none;
   }
+  .indicators {
+    padding: 120px 0 150px;
+  }
+  .indicators__textarea::before {
+    top: 10px;
+  }
 }
 @media(max-width: 1280px){
   .benefits {
@@ -192,6 +201,16 @@
       top: 20px;
     }
   }
+  .indicators__textarea::before {
+    top: 80px;
+  }
+  .indicators__video .video__play {
+    top: 150px;
+  }
+  .indicators__textarea {
+    max-width: 100%;
+    padding: 0;
+  }
 }
 @media(max-width: 1000px) {
   .design__text{
@@ -204,6 +223,30 @@
   .wow.color-choice__link{
     animation-name: none !important;
     visibility: visible !important;
+  }
+  .indicators__video-wrapper{
+    overflow: hidden;
+    width: 93%;
+  }
+}
+@media(max-width: 960px){
+  .indicators{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .indicators__textarea {
+    max-width: 750px;
+  }
+  .indicators__video-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .indicators__textarea::before {
+    top: 25px;
+  }
+  .indicators__video .video__play {
+    left: 10px;
   }
 }
 @media(max-width: 950px) {
@@ -247,6 +290,31 @@
   }
   .design__text{
     max-width: 220px;
+  }
+  .indicators__textarea {
+    margin-bottom: 35px;
+  }
+  .indicators__video .video__play {
+    left: 27px;
+  }
+  .indicators__textarea::before {
+    height: 330px;
+    left: -40px;
+    top: 6px;
+  }
+}
+@media(max-width: 890px){
+  .indicators__textarea::before {
+    display: none;
+  }
+  .indicators__textarea {
+    max-width: 665px;
+  }
+  .indicators__video-wrapper {
+    width: 80%;
+  }
+  .indicators__video .video__play {
+    left: 67px;
   }
 }
 @media(max-width: 880px){
@@ -299,6 +367,9 @@
   .color-choice__textarea::before{
     display: none;
   }
+  .indicators__video-img{
+    margin-left: -40px;
+  }
 }
 @media(max-width: 820px){
   .header__bottom-textarea::after {
@@ -306,7 +377,16 @@
   }
   .color-choice__textarea {
     margin-right: 10px;
-    margin-left: 80px;
+    margin-left: 35px;
+  }
+  .indicators__textarea {
+    max-width: 600px;
+  }
+  .indicators__video-img{
+    margin-left: -50px;
+  }
+  .indicators__video .video__play {
+    top: 190px;
   }
 }
 @media(max-width: 780px){
@@ -323,5 +403,8 @@
   .title {
     font-size: 24px;
     line-height: 28px;
+  }
+  .indicators__video-img{
+    margin-left: -70px;
   }
 }
