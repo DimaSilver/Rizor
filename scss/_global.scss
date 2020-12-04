@@ -173,3 +173,6 @@ body{
     transform: translateX(calc(-50% + 5px)) translateY(-50%);
   }
 }
+.video-wrapper{
+  overflow-x: hidden;
+}
