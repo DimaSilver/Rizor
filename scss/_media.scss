@@ -134,6 +134,47 @@
       margin-left: 290px;
     }
   }
+  .catalog__entrance {
+    background-position: center left;
+  }
+  .catalog__entrance-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .catalog__entrance-cover{
+    order: -1;
+    margin: -60px auto 0;
+  }
+  .catalog__entrance-textarea {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .catalog__entrance-textarea__paragraphs{
+    display: flex;
+    justify-content: space-between;
+  }
+  .catalog__entrance-textarea__paragraph{
+    max-width: 400px;
+  }
+  .catalog__entrance-textarea__paragraph + .catalog__entrance-textarea__paragraph {
+    margin-top: 20px;
+  }
+  .catalog__entrance-textarea__title,
+  .catalog__entrance-textarea__paragraphs{
+    text-align: left;
+  }
+  .catalog__entrance-textarea__link {
+    margin: 50px 0 100px;
+  }
+  .catalog__entrance-textarea__title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .catalog__entrance-textarea {
+    margin-top: 40px;
+  }
 }
 @media(max-width: 1520px){
   .header__bottom-textarea__descr {
@@ -295,6 +336,11 @@
     line-height: 118px;
   }
 }
+@media(max-width: 1230px){
+  .footer {
+    padding: 1px 0;
+  }
+}
 @media(max-width: 1200px) {
   .options__list-item__top {
     font-size: 54px;
@@ -313,6 +359,20 @@
   }
   .benefits__textarea-list__item::before {
     width: 25px;
+  }
+  .catalog__entrance-cover__bg-title {
+    font-size: 174px;
+    line-height: 178px;
+  }
+  .catalog__entrance-cover__bg-title {
+    left: 20px;
+  }
+  .catalog__entrance-cover {
+    max-width: 95%;
+  }
+  .catalog__entrance-textarea__title {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 @media(max-width: 1150px) {
@@ -347,6 +407,10 @@
   .characteristics__textarea-top {
     max-width: 370px;
   }
+  .catalog__entrance-textarea__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 @media(max-width: 1100px){
   .header__bottom-textarea__title {
@@ -377,6 +441,22 @@
     max-width: 100%;
     padding: 0;
   }
+  .catalog__entrance-textarea {
+    max-width: 780px;
+  }
+  .catalog__entrance-textarea__paragraph {
+    max-width: 330px;
+  }
+  .catalog__entrance-cover {
+    height: 700px;
+  }
+  .catalog__entrance-textarea__link {
+    margin: 40px 0 100px;
+  }
+  .catalog__entrance-cover__bg-title {
+    font-size: 167px;
+    line-height: 171px;
+  }
 }
 @media(max-width: 1090px){
   .characteristics__bg {
@@ -384,6 +464,9 @@
   }
   .characteristics__textarea-blocks__item {
     margin-bottom: 50px;
+  }
+  .characteristics {
+    padding-bottom: 190px;
   }
 }
 @media(max-width: 1070px){
@@ -396,6 +479,9 @@
   .accumulator::after {
     right: 59%;
     top: 187px;
+  }
+  .catalog__entrance-cover__bg-title span {
+    transform: translateX(calc(50% + 60px));
   }
 }
 @media(max-width: 1050px) {
@@ -457,6 +543,26 @@
   .characteristics__textarea-top {
     max-width: 330px;
   }
+  .catalog__entrance-cover{
+    height: 100%;
+  }
+  .catalog__entrance-cover__img{
+    margin-bottom: -5px;
+  }
+  .catalog__entrance-cover__bg-title {
+    font-size: 162px;
+    line-height: 166px;
+    bottom: -45px;
+    span {
+      transform: translateX(calc(50% + 130px));
+    }
+  }
+  .catalog__entrance-textarea {
+    max-width: 740px;
+  }
+  .characteristics {
+    padding-bottom: 140px;
+  }
 }
 @media(max-width: 980px){
   .accumulator__textarea {
@@ -487,6 +593,10 @@
   }
   .modes__components-item + .modes__components-item {
     margin-left: 50px;
+  }
+  .catalog__entrance-textarea__title {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 @media(max-width: 950px) {
@@ -548,6 +658,9 @@
   }
   .electronic__textarea-textfields {
     max-width: 450px;
+  }
+  .catalog__entrance-textarea__title {
+    margin-bottom: 30px;
   }
 }
 @media(max-width: 910px){
@@ -636,6 +749,23 @@
   .characteristics__textarea-top {
     max-width: 295px;
   }
+  .catalog__entrance-textarea {
+    max-width: 645px;
+  }
+  .catalog__entrance-textarea__paragraph {
+    max-width: 300px;
+  }
+  .catalog__entrance-textarea__link {
+    margin: 30px 0 100px;
+  }
+  .catalog__entrance-cover__bg-title {
+    font-size: 153px;
+    line-height: 157px;
+  }
+  .catalog__entrance-textarea__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 @media(max-width: 850px) {
   .design__textarea {
@@ -709,6 +839,10 @@
   }
   .benefits {
     padding-bottom: 140px;
+  }
+  .catalog__entrance-cover__bg-title {
+    font-size: 148px;
+    line-height: 152px;
   }
 }
 @media(max-width: 780px){
