@@ -10,4 +10,7 @@ $(function (){
         $(this).addClass('pagination__list-link__active').parent().siblings().children().removeClass('pagination__list-link__active');
     });
     new WOW().init();
+    $('.menu__btn').on('click', function () {
+       $('.menu__list').slideToggle();
+    });
 });
