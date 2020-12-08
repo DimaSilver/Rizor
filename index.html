@@ -159,7 +159,6 @@
             </div>
         </div>
     </div>
-    <!--
     <div class="container-small">
         <div class="indicators">
             <div class="indicators__textarea">
@@ -176,7 +175,10 @@
             </div>
             <a class="indicators__video" href="#">
                 <div class="indicators__video-wrapper video-wrapper">
-                    <img class="indicators__video-img" src="images/indicators__video-img.jpg" alt="">
+                    <picture>
+                        <source srcset="images/indicators__video-img__responsive.jpg" media="(max-width: 570px)">
+                        <img class="indicators__video-img" src="images/indicators__video-img.jpg" alt="">
+                    </picture>
                 </div>
                 <div class="video__play">
                     <p class="video-play__text">
@@ -189,6 +191,7 @@
             </a>
         </div>
     </div>
+    <!--
     <div class="modes">
         <a class="modes__video" href="#">
             <div class="modes__video-wrapper video-wrapper">
