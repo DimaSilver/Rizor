@@ -332,6 +332,11 @@
   &__list{
     margin-top: 30px;
   }
+  &__list-item{
+    &::before{
+      top: 9px;
+    }
+  }
   &__components{
     margin-top: 30px;
   }
