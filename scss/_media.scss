@@ -927,6 +927,9 @@
   .color-choice__list {
     padding: 0 0 0 20px;
   }
+  .accumulator__textarea {
+    margin-top: 25px;
+  }
 }
 @media(max-width: 650px){
   .menu__list-item + .menu__list-item {
@@ -962,8 +965,30 @@
   .benefits__textarea-descr {
     margin-bottom: 60px;
   }
+  .accumulator__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .accumulator__textarea {
+    padding-left: 0;
+    order: -1;
+  }
+  .accumulator__top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & picture{
+      margin-top: -34px;
+    }
+  }
+  .accumulator__top-options {
+    margin: -60px 0 0;
+    order: -1;
+  }
+  .accumulator__components-item{
+    margin-top: 35px;
+  }
 }
-
 @media(max-width: 630px) {
   .color-choice {
     flex-direction: column;
@@ -1005,6 +1030,7 @@
   .modes {
     display: flex;
     flex-direction: column;
+    padding-bottom: 75px;
   }
   .modes__video{
     order: 1;
@@ -1129,6 +1155,9 @@
     margin-left: 0;
     height: 300px;
   }
+  .accumulator__textarea {
+    width: 305px;
+  }
 }
 @media(max-width: 500px){
   .header__bottom-textarea__title {
@@ -1158,6 +1187,9 @@
   }
   .modes__list-item::before {
     top: 8px;
+  }
+  .accumulator__textarea {
+    width: 300px;
   }
 }
 @media(max-width: 350px){
