@@ -4,6 +4,15 @@
     visibility: visible !important;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .color-choice__list{
+    display: none;
+  }
+  .indicators__textarea,
+  .indicators__video{
+    display: none;
+  }
+}
 @media(max-width: 1830px) {
   .modes::after {
     left: 550px;
